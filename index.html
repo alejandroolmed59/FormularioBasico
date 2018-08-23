@@ -11,8 +11,8 @@
     <form action="index.html" method="GET"></form>
         <fieldset>
             <legend>Categoria personal</legend>
-            <label for="">Nombre: </label>
-            <input type="text" name="nombre" id="nombre" required>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Apellido, Nombre" required>
 
             <label for="birth">Fecha de cumpleaños</label>
             <input type="date" name="birth" id="birth">
@@ -30,16 +30,16 @@
             <legend>Cuenta</legend>
 
             <label for="correo">Email</label>
-            <input type="text" name="correo" id="correo" required>
+            <input type="text" name="correo" id="correo" placeholder="carlosSantana69@gmail.com"required>
 
             <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña" required minlength="5">
+            <input type="password" name="contraseña" id="contraseña" tittle="Minimo 5 caracteres" placeholder="*******" required pattern=".{5,15}" title="Entre 5 y 15 caracteres">
 
             <label for="verficador">Verificar Contraseña</label>
-            <input type="password" name="verficador" id="verficador" required minlength="5" > 
+            <input type="password" name="verficador" id="verficador" placeholder="*******" required pattern=".{5,15}" title="Entre 5 y 15 caracteres">
         </fieldset>
         <fieldset>
-            <legend>Informacion de contacto</legend>
+            <legend>Informacion de domicilio</legend>
             <div>
                 <label for="direccion">Direccion</label>
                 <input type="text" name="direccion" id="direccion">
@@ -50,10 +50,20 @@
                 <label for="Pais">Pais</label>
                 <input type="text" name="Pais" id="Pais">
             </div>
-            <div>
-                <label for="tel">Numero de telefono</label>
-                <input type="tel" name="tel" id="tel">
-            </div>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Informacion de contacto</legend>
+            
+            <label for="tel">Numero de telefono celular</label>
+            <input type="tel" name="tel" id="tel">
+
+            <label for="fijo">Numero fijo</label>
+            <input type="tel" name="fijo" id="fijo">
+
+            <label for="fax">Numero de fax</label>
+            <input type="text" name="fax" id="fax">
 
         </fieldset>
         <input type="submit" value="!Registrarse!">

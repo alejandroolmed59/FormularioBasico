@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Datos Basicos</h1>
+    <form action="index.html" method="GET"></form>
+        <fieldset>
+            <legend>Categoria personal</legend>
+            <label for="">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="birth">Fecha de cumpleaños</label>
+            <input type="date" name="birth" id="birth">
+
+            <label for="animal">Animal favorito</label>
+            <select name="animal" id="animal">
+                <option value="null">Seleccione</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gatito</option>
+                <option value="ganso">Ganso</option>
+                <option value="pato">Pato</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Cuenta</legend>
+
+            <label for="correo">Email</label>
+            <input type="text" name="correo" id="correo" required>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" required minlength="5">
+
+            <label for="verficador">Verificar Contraseña</label>
+            <input type="password" name="verficador" id="verficador" required minlength="5" > 
+        </fieldset>
+        <fieldset>
+            <legend>Informacion de contacto</legend>
+            <div>
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" id="ciudad">
+
+                <label for="Pais">Pais</label>
+                <input type="text" name="Pais" id="Pais">
+            </div>
+            <div>
+                <label for="tel">Numero de telefono</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+
+        </fieldset>
+        <input type="submit" value="!Registrarse!">
+</body>
+</html>
